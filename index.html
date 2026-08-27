@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Éclat — Beauty Atelier & Spa · Beverly Hills</title>
+  <meta name="description" content="A sanctuary of couture beauty, skincare, and wellness rituals in the heart of Beverly Hills. Master artists. Biodynamic formulations. Quiet luxury, since 2014.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============== NAVIGATION ============== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__brand">Maison Éclat</span>
+        <span class="nav__tagline">Beverly Hills · Est. 2014</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#stylists">Atelier</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Visit</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="tel:+13105550192" class="nav__phone">
+          <span class="nav__phone-label">Concierge</span>
+          <span class="nav__phone-number">+1 (310) 555-0192</span>
+        </a>
+        <button class="btn btn--primary nav__cta" data-book-trigger-book>Book Appointment</button>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__drawer" id="drawer" aria-hidden="true">
+      <nav aria-label="Mobile">
+        <a href="#services">Services</a>
+        <a href="#stylists">Atelier</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Visit</a>
+        <a href="tel:+13105550192" class="nav__drawer-phone">+1 (310) 555-0192</a>
+        <button class="btn btn--primary" data-trigger-book>Book Appointment</button>
+      </nav>
+    </div>
+    <div class="nav__scrim" id="scrim" aria-hidden="true"></div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="top">
+    <div class="hero__media">
+      <img src="https://picsum.photos/seed/maison-eclat-hero-spa-stone/1920/1280" alt="Soft-lit treatment room with linen, stone, and candlelight at Maison Éclat">
+    </div>
+    <div class="hero__veil"></div>
+
+    <div class="hero__content">
+      <span class="eyebrow eyebrow--light hero__eyebrow" data-hero="0">Beauty Atelier · Est. 2014</span>
+      <h1 class="hero__title" data-hero="1">
+        Elevate your<br>
+        <em>natural radiance.</em>
+      </h1>
+      <p class="hero__sub" data-hero="2">
+        A sanctuary of couture beauty, skincare, and wellness rituals — handcrafted by master artists in the heart of Beverly Hills. Every treatment begins with a conversation, never a checklist.
+      </p>
+      <div class="hero__actions" data-hero="3">
+        <button class="btn btn--primary btn--lg" data-trigger-book>Book Appointment</button>
+        <a href="#services" class="btn btn--ghost btn--lg">Explore the Menu</a>
+      </div>
+
+      <div class="hero__stats" data-hero="4">
+        <div class="hero__stat">
+          <span class="hero__stat-num">10<sup>+</sup></span>
+          <span class="hero__stat-label">Years of craft</span>
+        </div>
+        <span class="hero__stat-rule" aria-hidden="true"></span>
+        <div class="hero__stat">
+          <span class="hero__stat-num">5,200<sup>+</sup></span>
+          <span class="hero__stat-label">Devoted clients</span>
+        </div>
+        <span class="hero__stat-rule" aria-hidden="true"></span>
+        <div class="hero__stat">
+          <span class="hero__stat-num">32</span>
+          <span class="hero__stat-label">Industry awards</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rotating seal -->
+    <div class="hero__seal" aria-hidden="true">
+      <svg viewBox="0 0 120 120" class="seal">
+        <defs>
+          <path id="sealArc" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
+        </defs>
+        <circle cx="60" cy="60" r="59" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
+        <circle cx="60" cy="60" r="40" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
+        <text class="seal__text">
+          <textPath href="#sealArc" startOffset="0">MAISON ÉCLAT · BEVERLY HILLS · EST. 2014 · </textPath>
+        </text>
+        <text x="60" y="68" text-anchor="middle" class="seal__mark">M·É</text>
+      </svg>
+    </div>
+
+    <a href="#philosophy" class="hero__scroll" aria-label="Scroll to discover">
+      <span>Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ============== PHILOSOPHY ============== -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <div class="philosophy__head reveal">
+        <span class="eyebrow">Our Philosophy</span>
+        <p class="philosophy__lede">
+          Beauty is not applied — it is <em>revealed</em>. Every ritual at Maison Éclat begins with a quiet conversation, an honest reading of your skin, your hair, your story. Then we step back, and let the work speak.
+        </p>
+      </div>
+
+      <div class="philosophy__grid">
+        <article class="reveal">
+          <span class="philosophy__num">01</span>
+          <h3>Bespoke, never menu-driven</h3>
+          <p>Our consultations are unhurried. We blend treatments to your skin's mood, your hair's memory, the season you carry through the door.</p>
+        </article>
+        <article class="reveal">
+          <span class="philosophy__num">02</span>
+          <h3>Master artists, not technicians</h3>
+          <p>Every member of our atelier trained in Paris, Milan, or Tokyo before joining us. A minimum of ten years' independent practice — non-negotiable.</p>
+        </article>
+        <article class="reveal">
+          <span class="philosophy__num">03</span>
+          <h3>Quiet luxury, certified clean</h3>
+          <p>We work exclusively with biodynamic, reef-safe, cruelty-free houses. No parabens, no phthalates, no shortcuts. The skin knows the difference.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SERVICES & PRICING ============== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services__head reveal">
+        <span class="eyebrow">The Menu</span>
+        <h2 class="services__title">Rituals &amp; pricing</h2>
+        <p class="services__intro">Each treatment begins with a complimentary consultation and ends with a hand-blended take-home infusion, selected for the week ahead.</p>
+      </div>
+
+      <div class="services__tabs reveal" role="tablist" aria-label="Service categories">
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="hair">Hair Styling</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="skin">Skincare &amp; Facials</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="nails">Nail Art</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="spa">Spa &amp; Massages</button>
+      </div>
+
+      <div class="services__panels">
+        <!-- HAIR -->
+        <div class="panel is-active" data-panel="hair" role="tabpanel">
+          <ul class="menu">
+            <li class="menu__item reveal">
+              <div class="menu__head">
+                <h3 class="menu__name">Couture Cut &amp; Style</h3>
+                <span class="menu__price">$180</span>
+              </div>
+              <p class="menu__desc">A sculptural cut, drawn from your bone structure and lifestyle. Includes wash, scalp massage, and thermal finish.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">90 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Couture Cut & Style">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item reveal">
+              <div class="menu__head">
+                <h3 class="menu__name">Balayage Lumière</h3>
+                <span class="menu__price">$320</span>
+              </div>
+              <p class="menu__desc">Hand-painted, sun-kissed dimension. Freehand technique, no foils — designed to grow out softly for six to eight months.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">180 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Balayage Lumière">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item reveal">
+              <div class="menu__head">
+                <h3 class="menu__name">Keratin Renewal Therapy</h3>
+                <span class="menu__price">$280</span>
+              </div>
+              <p class="menu__desc">Formaldehyde-free smoothing treatment with hydrolyzed silk. Eliminates frizz for twelve weeks without compromising natural movement.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">150 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Keratin Renewal Therapy">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item reveal">
+              <div class="menu__head">
+                <h3 class="menu__name">Bridal Hair Sculpting</h3>
+                <span class="menu__price">$450</span>
+              </div>
+              <p class="menu__desc">A two-hour private suite with Isabelle, our creative director. Includes trial session, day-of styling, and one companion's hair.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">120 minutes · suite</span>
+                <button class="menu__book" data-trigger-book data-service="Bridal Hair Sculpting">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item reveal">
+              <div class="menu__head">
+                <h3 class="menu__name">Gloss Treatment &amp; Blowout</h3>
+                <span class="menu__price">$120</span>
+              </div>
+              <p class="menu__desc">A demi-permanent gloss to revive tone and luminosity, finished with a thermal blow-dry styled to your preference.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">60 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Gloss Treatment & Blowout">Book this ritual →</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SKIN -->
+        <div class="panel" data-panel="skin" role="tabpanel" hidden>
+          <ul class="menu">
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Caviar Lifting Facial</h3>
+                <span class="menu__price">$240</span>
+              </div>
+              <p class="menu__desc">A manual-lift massage ritual paired with caviar extract and bio-peptides. Visible firming that deepens over the following 72 hours.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">75 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Caviar Lifting Facial">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">24K Gold Infusion Ritual</h3>
+                <span class="menu__price">$380</span>
+              </div>
+              <p class="menu__desc">Our signature. Colloidal gold, narcissus bulb extract, and a slow lymphatic drainage massage. Skin is left luminous for ten days.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">90 minutes · signature</span>
+                <button class="menu__book" data-trigger-book data-service="24K Gold Infusion Ritual">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Deep HydraGlass Facial</h3>
+                <span class="menu__price">$180</span>
+              </div>
+              <p class="menu__desc">Multi-layer hydration with hyaluronic acid, squalane, and a cooling glass massage. Designed for dull, dehydrated, or jet-lagged skin.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">60 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Deep HydraGlass Facial">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Microcurrent Sculpting</h3>
+                <span class="menu__price">$220</span>
+              </div>
+              <p class="menu__desc">A non-invasive lift using low-frequency microcurrents. Defines jawline, lifts brows, and contours cheekbones — no downtime, no redness.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">70 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Microcurrent Sculpting">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Bespoke Diamond Peel</h3>
+                <span class="menu__price">$200</span>
+              </div>
+              <p class="menu__desc">Mechanical resurfacing with graduated diamond tips. Refines texture, softens fine lines, and prepares skin for events within 48 hours.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">50 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Bespoke Diamond Peel">Book this ritual →</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- NAILS -->
+        <div class="panel" data-panel="nails" role="tabpanel" hidden>
+          <ul class="menu">
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Couture Manicure</h3>
+                <span class="menu__price">$75</span>
+              </div>
+              <p class="menu__desc">A meticulous file, cuticle care, hand mask, and polish. Ten-minute massage and a flawless lacquer finish.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">45 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Couture Manicure">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Japanese Gel Art</h3>
+                <span class="menu__price">$130</span>
+              </div>
+              <p class="menu__desc">Brush-painted gel art by Marcus — florals, gradients, foil inlay, or hand-mixed bespoke tones. Lasts three weeks without chipping.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">90 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Japanese Gel Art">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Crystal Encrusté Pedicure</h3>
+                <span class="menu__price">$160</span>
+              </div>
+              <p class="menu__desc">A spa pedicure with crystal-file technique, warm stone massage, and a hand-set crystal finish on the toes of your choosing.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">75 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Crystal Encrusté Pedicure">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Bridal Nail Suite</h3>
+                <span class="menu__price">$220</span>
+              </div>
+              <p class="menu__desc">A private two-hour suite for the bride — manicure, pedicure, and a custom-designed accent nail. Champagne and canapés included.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">120 minutes · suite</span>
+                <button class="menu__book" data-trigger-book data-service="Bridal Nail Suite">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Soak-Off &amp; Refresh</h3>
+                <span class="menu__price">$50</span>
+              </div>
+              <p class="menu__desc">A gentle removal of existing gel or shellac, with cuticle conditioning and a strengthening base coat for recovery between appointments.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">30 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Soak-Off & Refresh">Book this ritual →</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SPA -->
+        <div class="panel" data-panel="spa" role="tabpanel" hidden>
+          <ul class="menu">
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Aromatherapy Silk Massage</h3>
+                <span class="menu__price">$190</span>
+              </div>
+              <p class="menu__desc">A slow, flowing massage with a hand-blended essential oil chosen for your nervous system. Drains tension without deep pressure.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">70 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Aromatherapy Silk Massage">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Hot Stone Embrace</h3>
+                <span class="menu__price">$220</span>
+              </div>
+              <p class="menu__desc">Volcanic basalt stones warmed to 50°C and placed along the spine, palms, and feet. Melts chronic muscular tension in a single session.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">80 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Hot Stone Embrace">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Lymphatic Drainage Ritual</h3>
+                <span class="menu__price">$180</span>
+              </div>
+              <p class="menu__desc">A feather-light, deeply precise technique following the Vodder method. Reduces puffiness, supports immunity, leaves skin visibly lifted.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">60 minutes</span>
+                <button class="menu__book" data-trigger-book data-service="Lymphatic Drainage Ritual">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Four-Hand Synchrony</h3>
+                <span class="menu__price">$380</span>
+              </div>
+              <p class="menu__desc">Two therapists, one synchronized choreography. The mind cannot track four hands at once — it surrenders within minutes. Our most requested ritual.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">60 minutes · signature</span>
+                <button class="menu__book" data-trigger-book data-service="Four-Hand Synchrony">Book this ritual →</button>
+              </div>
+            </li>
+            <li class="menu__item">
+              <div class="menu__head">
+                <h3 class="menu__name">Couple's Sanctuary Suite</h3>
+                <span class="menu__price">$540</span>
+              </div>
+              <p class="menu__desc">A private suite with two tables, a soaking tub, and a tea ceremony. Includes a 60-minute synchronized massage and 30 minutes of stillness.</p>
+              <div class="menu__meta">
+                <span class="menu__duration">90 minutes · suite</span>
+                <button class="menu__book" data-trigger-book data-service="Couple's Sanctuary Suite">Book this ritual →</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="services__footnote reveal">
+        <span class="ornament">✦</span> All treatments include a complimentary glass of champagne or house-infused herbal tea. Members of our Atelier Circle receive 15% off all rituals and priority booking.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== STYLISTS ============== -->
+  <section class="stylists" id="stylists">
+    <div class="container">
+      <div class="stylists__head reveal">
+        <span class="eyebrow">The Atelier</span>
+        <h2 class="stylists__title">Master artists behind the chair</h2>
+        <p class="stylists__intro">Each member of our atelier trained in Paris, Milan, Tokyo, or Zurich before joining us — and brings a signature hand you will recognize by name.</p>
+      </div>
+
+      <div class="stylists__grid">
+        <article class="artist reveal">
+          <div class="artist__photo">
+            <img src="https://picsum.photos/seed/stylist-isabelle-moreau-paris/600/780" alt="Portrait of Isabelle Moreau, Creative Director">
+          </div>
+          <div class="artist__body">
+            <span class="artist__role">Creative Director</span>
+            <h3 class="artist__name">Isabelle Moreau</h3>
+            <p class="artist__specialty">Couture color · Balayage · Bridal sculpture</p>
+            <p class="artist__bio">Trained at the Franck Provost atelier in Paris. Twelve years on Rodeo Drive. Reads hair the way a sommelier reads a cellar.</p>
+            <a href="#" class="artist__ig" aria-label="Isabelle Moreau on Instagram">@isabelle.eclat</a>
+          </div>
+        </article>
+
+        <article class="artist reveal">
+          <div class="artist__photo">
+            <img src="https://picsum.photos/seed/stylist-sophia-lin-tokyo/600/780" alt="Portrait of Sophia Lin, Senior Aesthetician">
+          </div>
+          <div class="artist__body">
+            <span class="artist__role">Senior Aesthetician</span>
+            <h3 class="artist__name">Sophia Lin</h3>
+            <p class="artist__specialty">HydraGlass Facials · Microcurrent · Skin diagnosis</p>
+            <p class="artist__bio">Tokyo-trained, certified in Vodder lymphatic drainage. Believes the skin is a record of the last six months of your life.</p>
+            <a href="#" class="artist__ig" aria-label="Sophia Lin on Instagram">@sophia.skin</a>
+          </div>
+        </article>
+
+        <article class="artist reveal">
+          <div class="artist__photo">
+            <img src="https://picsum.photos/seed/stylist-marcus-bellini-milan/600/780" alt="Portrait of Marcus Bellini, Nail Art Curator">
+          </div>
+          <div class="artist__body">
+            <span class="artist__role">Nail Art Curator</span>
+            <h3 class="artist__name">Marcus Bellini</h3>
+            <p class="artist__specialty">Japanese gel · Hand-painted art · Bridal suites</p>
+            <p class="artist__bio">Milan-born, with eight years at the Bulgari Hotels. Treats each nail as a small canvas — never repeats a design.</p>
+            <a href="#" class="artist__ig" aria-label="Marcus Bellini on Instagram">@marcus.bellini</a>
+          </div>
+        </article>
+
+        <article class="artist reveal">
+          <div class="artist__photo">
+            <img src="https://picsum.photos/seed/stylist-elena-vasquez-zurich/600/780" alt="Portrait of Elena Vasquez, Spa Director">
+          </div>
+          <div class="artist__body">
+            <span class="artist__role">Spa Director</span>
+            <h3 class="artist__name">Elena Vasquez</h3>
+            <p class="artist__specialty">Lymphatic wellness · Aromatherapy · Four-hand synchrony</p>
+            <p class="artist__bio">Zurich-certified in clinical massage and aromatherapy. Designs every oil blend in-house, by hand, weekly.</p>
+            <a href="#" class="artist__ig" aria-label="Elena Vasquez on Instagram">@elena.spa</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== GALLERY ============== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="gallery__head reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2 class="gallery__title">Selected work</h2>
+        <p class="gallery__intro">A rotating selection from our atelier — balayage finishes, facials, nail art, and bridal suites. Photographed in natural light, untouched.</p>
+      </div>
+
+      <div class="gallery__filters reveal" role="tablist" aria-label="Gallery filters">
+        <button class="filter is-active" data-filter="all">All work</button>
+        <button class="filter" data-filter="hair">Hair</button>
+        <button class="filter" data-filter="nails">Nails</button>
+        <button class="filter" data-filter="makeup">Makeup</button>
+        <button class="filter" data-filter="skin">Skin</button>
+      </div>
+
+      <div class="gallery__grid">
+        <a href="#" class="tile reveal" data-cat="hair">
+          <img src="https://picsum.photos/seed/gallery-hair-balayage-lumiere-finish/600/780" alt="Balayage Lumière finish on long hair">
+          <span class="tile__label">Balayage Lumière · Isabelle</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="skin">
+          <img src="https://picsum.photos/seed/gallery-skin-gold-infusion-glow/600/780" alt="24K Gold Infusion facial result">
+          <span class="tile__label">24K Gold Ritual · Sophia</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="nails">
+          <img src="https://picsum.photos/seed/gallery-nails-japanese-gel-floral/600/780" alt="Japanese gel art with floral detail">
+          <span class="tile__label">Japanese Gel · Marcus</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="makeup">
+          <img src="https://picsum.photos/seed/gallery-makeup-bridal-soft-glow/600/780" alt="Bridal soft-glow makeup">
+          <span class="tile__label">Bridal Suite · Soft Glow</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="hair">
+          <img src="https://picsum.photos/seed/gallery-hair-bridal-sculpture-low-chignon/600/780" alt="Low chignon bridal sculpture">
+          <span class="tile__label">Bridal Sculpture · Isabelle</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="skin">
+          <img src="https://picsum.photos/seed/gallery-skin-hydraglass-fresh-dew/600/780" alt="HydraGlass facial result with dewy finish">
+          <span class="tile__label">HydraGlass · Sophia</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="nails">
+          <img src="https://picsum.photos/seed/gallery-nails-crystal-encrusted-pedicure/600/780" alt="Crystal-encrusted pedicure detail">
+          <span class="tile__label">Crystal Encrusté · Marcus</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="makeup">
+          <img src="https://picsum.photos/seed/gallery-makeup-editorial-evening-eye/600/780" alt="Editorial evening makeup">
+          <span class="tile__label">Editorial Evening · Atelier</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="hair">
+          <img src="https://picsum.photos/seed/gallery-hair-couture-cut-blunt-bob/600/780" alt="Couture blunt bob cut">
+          <span class="tile__label">Couture Cut · Isabelle</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="skin">
+          <img src="https://picsum.photos/seed/gallery-skin-caviar-lifting-jawline/600/780" alt="Caviar lifting facial result">
+          <span class="tile__label">Caviar Lift · Sophia</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="nails">
+          <img src="https://picsum.photos/seed/gallery-nails-bridal-suite-magnetic/600/780" alt="Bridal nail suite with magnetic finish">
+          <span class="tile__label">Bridal Suite · Marcus</span>
+        </a>
+        <a href="#" class="tile reveal" data-cat="makeup">
+          <img src="https://picsum.photos/seed/gallery-makeup-natural-radiance-day/600/780" alt="Natural radiance day makeup">
+          <span class="tile__label">Natural Day · Atelier</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== REVIEWS ============== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="reviews__head reveal">
+        <span class="eyebrow">Words from our clients</span>
+        <h2 class="reviews__title">Verified, unedited, ours to carry.</h2>
+      </div>
+
+      <div class="reviews__featured reveal">
+        <span class="reviews__quote-mark" aria-hidden="true">"</span>
+        <blockquote class="reviews__featured-quote">
+          Isabelle understood my hair's history in five minutes. The balayage she painted has grown out beautifully for eight months — no harsh line, no regret. I have not been to another salon since.
+        </blockquote>
+        <div class="reviews__featured-cite">
+          <span class="reviews__featured-name">Vivian Zhao</span>
+          <span class="reviews__featured-role">Creative Director · Verified client since 2019</span>
+        </div>
+        <div class="reviews__stars" aria-label="5 out of 5 stars">★★★★★</div>
+      </div>
+
+      <div class="reviews__grid">
+        <article class="review reveal">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>They held our bridal suite with such calm. Marcus did my nails at 7am, Sophia sculpted my skin by 9, and Isabelle set my hair by noon. I have never felt so held on a day that could have been chaos.</p>
+          <footer>
+            <span class="review__name">Catherine Wells</span>
+            <span class="review__role">Bride · Spring 2024</span>
+          </footer>
+        </article>
+        <article class="review reveal">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>The 24K Gold Ritual left me sitting in the car for ten minutes before I could drive. I just wanted to stay in that quiet. Worth every dollar, twice over.</p>
+          <footer>
+            <span class="review__name">Aisha Rahman</span>
+            <span class="review__role">Editor-in-Chief</span>
+          </footer>
+        </article>
+        <article class="review reveal">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>I have searched for a quiet, intelligent aesthetician for fifteen years. Sophia is the one. She reads skin like a librarian reads first editions.</p>
+          <footer>
+            <span class="review__name">Olivia Hartman</span>
+            <span class="review__role">Architect</span>
+          </footer>
+        </article>
+        <article class="review reveal">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>I came in for a men's cut and left with a ritual. The scalp massage alone is worth the trip across town. Marcus also reshaped my nails — I didn't know they could look like this.</p>
+          <footer>
+            <span class="review__name">Daniel Brooks</span>
+            <span class="review__role">Musician</span>
+          </footer>
+        </article>
+        <article class="review reveal">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>Their couple's suite is the only place my husband and I have shared silence that felt chosen, not awkward. We now come every month, without fail.</p>
+          <footer>
+            <span class="review__name">Mireille Dubois</span>
+            <span class="review__role">Restaurateur</span>
+          </footer>
+        </article>
+        <article class="review reveal">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>Elena blended an oil for my anxiety that I now refuse to travel without. The four-hand synchrony massage is, without exaggeration, the closest I have come to meditation in ten years.</p>
+          <footer>
+            <span class="review__name">Priya Anand</span>
+            <span class="review__role">Venture Partner</span>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Maison Éclat</span>
+        <span class="footer__tagline">Beauty Atelier &amp; Spa · Beverly Hills</span>
+        <p class="footer__copy">A sanctuary of couture beauty, skincare, and wellness rituals. Quiet luxury, certified clean, since 2014.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Pinterest">Pinterest</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <ul>
+          <li><span>Monday – Friday</span><span>9:00 – 20:00</span></li>
+          <li><span>Saturday</span><span>9:00 – 19:00</span></li>
+          <li><span>Sunday</span><span>10:00 – 18:00</span></li>
+          <li><span>Holidays</span><span>By appointment</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <address>
+          9614 Wilshire Boulevard<br>
+          Beverly Hills, CA 90212<br>
+          <a href="https://maps.google.com/?q=9614+Wilshire+Blvd+Beverly+Hills+CA" target="_blank" rel="noopener">Open in Google Maps →</a>
+        </address>
+        <a href="tel:+13105550192" class="footer__phone">+1 (310) 555-0192</a>
+        <a href="mailto:concierge@maisoneclat.com" class="footer__email">concierge@maisoneclat.com</a>
+      </div>
+
+      <div class="footer__col footer__newsletter">
+        <h4>Atelier Circle</h4>
+        <p>Quarterly notes on rituals, seasonal offerings, and members-only events. No more than four letters a year.</p>
+        <form class="newsletter" id="newsletterForm" novalidate>
+          <label class="newsletter__field">
+            <span class="sr-only">Email address</span>
+            <input type="email" name="email" placeholder="Your email" required>
+          </label>
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+          <small class="newsletter__success" id="newsletterSuccess">Welcome to the Circle. We'll be in touch.</small>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© 2024 Maison Éclat. All rights reserved.</span>
+        <nav class="footer__legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Careers</a>
+        </nav>
+        <span class="footer__credit">Crafted in Beverly Hills</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============== BOOKING MODAL ============== -->
+  <div class="modal" id="bookingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </button>
+
+      <aside class="modal__aside">
+        <span class="eyebrow eyebrow--light">Reservation</span>
+        <h2 class="modal__title" id="modalTitle">Reserve your ritual</h2>
+        <p class="modal__intro">Tell us a little about the moment you'd like to create. Our concierge will confirm within two hours during business hours.</p>
+
+        <div class="modal__contact">
+          <div class="modal__contact-row">
+            <span class="modal__contact-label">Concierge</span>
+            <a href="tel:+13105550192">+1 (310) 555-0192</a>
+          </div>
+          <div class="modal__contact-row">
+            <span class="modal__contact-label">Atelier</span>
+            <span>9614 Wilshire Blvd, Beverly Hills</span>
+          </div>
+          <div class="modal__contact-row">
+            <span class="modal__contact-label">Hours</span>
+            <span>Mon–Fri 9–8 · Sat 9–7 · Sun 10–6</span>
+          </div>
+        </div>
+
+        <div class="modal__ornament" aria-hidden="true">
+          <span class="ornament">✦</span>
+        </div>
+      </aside>
+
+      <form class="modal__form" id="bookingForm" novalidate>
+        <div class="form__grid">
+          <label class="field">
+            <span class="field__label">Service <em>*</em></span>
+            <select name="service" required>
+              <option value="">Select a ritual…</option>
+              <optgroup label="Hair Styling">
+                <option>Couture Cut & Style</option>
+                <option>Balayage Lumière</option>
+                <option>Keratin Renewal Therapy</option>
+                <option>Bridal Hair Sculpting</option>
+                <option>Gloss Treatment & Blowout</option>
+              </optgroup>
+              <optgroup label="Skincare & Facials">
+                <option>Caviar Lifting Facial</option>
+                <option>24K Gold Infusion Ritual</option>
+                <option>Deep HydraGlass Facial</option>
+                <option>Microcurrent Sculpting</option>
+                <option>Bespoke Diamond Peel</option>
+              </optgroup>
+              <optgroup label="Nail Art">
+                <option>Couture Manicure</option>
+                <option>Japanese Gel Art</option>
+                <option>Crystal Encrusté Pedicure</option>
+                <option>Bridal Nail Suite</option>
+                <option>Soak-Off & Refresh</option>
+              </optgroup>
+              <optgroup label="Spa & Massages">
+                <option>Aromatherapy Silk Massage</option>
+                <option>Hot Stone Embrace</option>
+                <option>Lymphatic Drainage Ritual</option>
+                <option>Four-Hand Synchrony</option>
+                <option>Couple's Sanctuary Suite</option>
+              </optgroup>
+            </select>
+            <small class="field__error" data-error-for="service"></small>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Preferred stylist</span>
+            <select name="stylist">
+              <option value="">Any available master</option>
+              <option>Isabelle Moreau</option>
+              <option>Sophia Lin</option>
+              <option>Marcus Bellini</option>
+              <option>Elena Vasquez</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Date <em>*</em></span>
+            <input type="date" name="date" required>
+            <small class="field__error" data-error-for="date"></small>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Preferred time <em>*</em></span>
+            <select name="time" required>
+              <option value="">Select…</option>
+              <option>9:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>1:00 PM</option>
+              <option>2:00 PM</option>
+              <option>3:00 PM</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:00 PM</option>
+            </select>
+            <small class="field__error" data-error-for="time"></small>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Full name <em>*</em></span>
+            <input type="text" name="name" required autocomplete="name">
+            <small class="field__error" data-error-for="name"></small>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Phone <em>*</em></span>
+            <input type="tel" name="phone" required autocomplete="tel" placeholder="(310) 555-0192">
+            <small class="field__error" data-error-for="phone"></small>
+          </label>
+
+          <label class="field field--full">
+            <span class="field__label">Email <em>*</em></span>
+            <input type="email" name="email" required autocomplete="email" placeholder="you@domain.com">
+            <small class="field__error" data-error-for="email"></small>
+          </label>
+
+          <label class="field field--full">
+            <span class="field__label">Notes for our concierge <span class="field__optional">(optional)</span></span>
+            <textarea name="notes" rows="3" placeholder="Allergies, accessibility, occasion, anything we should know…"></textarea>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg form__submit" id="formSubmit">
+          <span class="form__submit-label">Request reservation</span>
+          <span class="form__submit-spinner" aria-hidden="true"></span>
+        </button>
+
+        <div class="form__success" id="formSuccess" role="status" aria-live="polite">
+          <span class="form__success-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </span>
+          <strong>Reservation received.</strong>
+          <p>Our concierge will reach you within two hours to confirm. For urgent requests, please call <a href="tel:+13105550192">+1 (310) 555-0192</a>.</p>
+          <button type="button" class="btn btn--ghost" data-close>Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
