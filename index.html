@@ -3,832 +3,827 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maison Éclat — Beauty Atelier & Spa · Beverly Hills</title>
-  <meta name="description" content="A sanctuary of couture beauty, skincare, and wellness rituals in the heart of Beverly Hills. Master artists. Biodynamic formulations. Quiet luxury, since 2014.">
+  <title>Hartwell &amp; Marsh — Private Counsel | Strategic Legal Advisory, New York</title>
+  <meta name="description" content="Hartwell & Marsh provides strategic legal counsel for complex, high-stakes matters — corporate litigation, wealth and estate protection, intellectual property, and strategic contracts.">
+  <meta name="theme-color" content="#0B1325">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B1325'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='44' fill='%23C5A059' text-anchor='middle'%3E%C2%A7%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ============== NAVIGATION ============== -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#top" class="nav__logo">
-        <span class="nav__brand">Maison Éclat</span>
-        <span class="nav__tagline">Beverly Hills · Est. 2014</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Hartwell and Marsh — return to top">
+        <span class="brand-mark" aria-hidden="true">HM</span>
+        <span class="brand-text">
+          <span class="brand-name">Hartwell <em>&amp;</em> Marsh</span>
+          <span class="brand-sub">Private Counsel</span>
+        </span>
       </a>
 
-      <nav class="nav__links" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#stylists">Atelier</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Visit</a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#practice">Practice Areas</a></li>
+          <li><a class="nav-link" href="#results">Proven Results</a></li>
+          <li><a class="nav-link" href="#insights">Insights</a></li>
+        </ul>
       </nav>
 
-      <div class="nav__actions">
-        <a href="tel:+13105550192" class="nav__phone">
-          <span class="nav__phone-label">Concierge</span>
-          <span class="nav__phone-number">+1 (310) 555-0192</span>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+12125550147">
+          <i class="ri-phone-line" aria-hidden="true"></i>
+          <span>+1 (212) 555-0147</span>
         </a>
-        <button class="btn btn--primary nav__cta" data-book-trigger-book>Book Appointment</button>
-        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
-          <span></span><span></span><span></span>
+        <button class="btn btn-solid btn-header" type="button" data-modal-open>Book Consultation</button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Open navigation menu">
+          <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
       </div>
     </div>
-
-    <div class="nav__drawer" id="drawer" aria-hidden="true">
-      <nav aria-label="Mobile">
-        <a href="#services">Services</a>
-        <a href="#stylists">Atelier</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Visit</a>
-        <a href="tel:+13105550192" class="nav__drawer-phone">+1 (310) 555-0192</a>
-        <button class="btn btn--primary" data-trigger-book>Book Appointment</button>
-      </nav>
-    </div>
-    <div class="nav__scrim" id="scrim" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
   </header>
 
-  <!-- ============== HERO ============== -->
-  <section class="hero" id="top">
-    <div class="hero__media">
-      <img src="https://picsum.photos/seed/maison-eclat-hero-spa-stone/1920/1280" alt="Soft-lit treatment room with linen, stone, and candlelight at Maison Éclat">
-    </div>
-    <div class="hero__veil"></div>
+  <!-- ======================= MOBILE DRAWER ======================= -->
+  <div class="drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" data-drawer-close></div>
+    <nav class="drawer-panel" aria-label="Mobile navigation">
+      <p class="drawer-label">Menu</p>
+      <ul class="drawer-links">
+        <li><a href="#about" data-drawer-close><span class="drawer-no">01</span>About</a></li>
+        <li><a href="#practice" data-drawer-close><span class="drawer-no">02</span>Practice Areas</a></li>
+        <li><a href="#results" data-drawer-close><span class="drawer-no">03</span>Proven Results</a></li>
+        <li><a href="#insights" data-drawer-close><span class="drawer-no">04</span>Insights</a></li>
+      </ul>
+      <div class="drawer-foot">
+        <button class="btn btn-solid btn-block" type="button" data-modal-open>Book Consultation</button>
+        <a class="drawer-phone" href="tel:+12125550147"><i class="ri-phone-line" aria-hidden="true"></i>+1 (212) 555-0147</a>
+        <p class="drawer-note">590 Madison Avenue, 31st Floor · New York, NY</p>
+      </div>
+    </nav>
+  </div>
 
-    <div class="hero__content">
-      <span class="eyebrow eyebrow--light hero__eyebrow" data-hero="0">Beauty Atelier · Est. 2014</span>
-      <h1 class="hero__title" data-hero="1">
-        Elevate your<br>
-        <em>natural radiance.</em>
-      </h1>
-      <p class="hero__sub" data-hero="2">
-        A sanctuary of couture beauty, skincare, and wellness rituals — handcrafted by master artists in the heart of Beverly Hills. Every treatment begins with a conversation, never a checklist.
-      </p>
-      <div class="hero__actions" data-hero="3">
-        <button class="btn btn--primary btn--lg" data-trigger-book>Book Appointment</button>
-        <a href="#services" class="btn btn--ghost btn--lg">Explore the Menu</a>
+  <main id="main">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero grain" id="top" data-nav="">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-glyph" id="heroGlyph">§</span>
       </div>
 
-      <div class="hero__stats" data-hero="4">
-        <div class="hero__stat">
-          <span class="hero__stat-num">10<sup>+</sup></span>
-          <span class="hero__stat-label">Years of craft</span>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker" data-hero style="--d:.15s"><span class="kicker-rule"></span>Private Counsel · Est. 1993 · New York</p>
+          <h1 class="hero-title" data-hero style="--d:.3s">
+            Strategic Legal Counsel for Complex, <em>High-Stakes</em> Matters.
+          </h1>
+          <p class="hero-sub" data-hero style="--d:.45s">
+            For three decades, Hartwell &amp; Marsh has advised founders, boards, and family
+            offices when the outcome is not negotiable — in the boardroom, before the
+            regulator, and at trial.
+          </p>
+          <div class="hero-cta" data-hero style="--d:.6s">
+            <button class="btn btn-solid" type="button" data-modal-open>
+              Book a Consultation <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+            </button>
+            <a class="btn btn-ghost" href="#practice">
+              Explore Practice Areas <i class="ri-arrow-down-line" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-        <span class="hero__stat-rule" aria-hidden="true"></span>
-        <div class="hero__stat">
-          <span class="hero__stat-num">5,200<sup>+</sup></span>
-          <span class="hero__stat-label">Devoted clients</span>
+
+        <div class="hero-side" aria-hidden="true">
+          <span class="hero-side-text">Privileged · Independent · Since 1993</span>
+          <span class="hero-side-line"></span>
+          <span class="hero-side-dot"></span>
+          <span class="hero-side-text hero-side-text--dim">40.7626° N — 73.9710° W</span>
         </div>
-        <span class="hero__stat-rule" aria-hidden="true"></span>
-        <div class="hero__stat">
-          <span class="hero__stat-num">32</span>
-          <span class="hero__stat-label">Industry awards</span>
+      </div>
+
+      <div class="hero-stats" data-hero style="--d:.8s">
+        <div class="container stats-grid">
+          <div class="stat">
+            <span class="stat-num"><span data-count="32">0</span></span>
+            <span class="stat-label">Years of Practice</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="1150" data-suffix="+">0</span></span>
+            <span class="stat-label">Matters Resolved</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="1.4" data-prefix="$" data-suffix="B" data-decimals="1">0</span></span>
+            <span class="stat-label">Recovered &amp; Preserved</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ADMISSIONS MARQUEE ======================= -->
+    <div class="admissions" aria-label="Bar admissions and peer recognition">
+      <div class="admissions-track">
+        <div class="admissions-group">
+          <span class="admissions-item">Admitted to Practice — New York</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">Connecticut</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">District of Columbia</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">U.S. Supreme Court</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">Second Circuit Court of Appeals</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">U.S. Tax Court</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">S.D.N.Y. · E.D.N.Y. · D. Conn.</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">AV Preeminent® — 30 Consecutive Years</span><span class="admissions-sep">§</span>
+        </div>
+        <div class="admissions-group" aria-hidden="true">
+          <span class="admissions-item">Admitted to Practice — New York</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">Connecticut</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">District of Columbia</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">U.S. Supreme Court</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">Second Circuit Court of Appeals</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">U.S. Tax Court</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">S.D.N.Y. · E.D.N.Y. · D. Conn.</span><span class="admissions-sep">§</span>
+          <span class="admissions-item">AV Preeminent® — 30 Consecutive Years</span><span class="admissions-sep">§</span>
         </div>
       </div>
     </div>
 
-    <!-- Rotating seal -->
-    <div class="hero__seal" aria-hidden="true">
-      <svg viewBox="0 0 120 120" class="seal">
-        <defs>
-          <path id="sealArc" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
-        </defs>
-        <circle cx="60" cy="60" r="59" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-        <circle cx="60" cy="60" r="40" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-        <text class="seal__text">
-          <textPath href="#sealArc" startOffset="0">MAISON ÉCLAT · BEVERLY HILLS · EST. 2014 · </textPath>
-        </text>
-        <text x="60" y="68" text-anchor="middle" class="seal__mark">M·É</text>
-      </svg>
-    </div>
+    <!-- ======================= ABOUT THE PRINCIPAL ======================= -->
+    <section class="section section-light" id="about" data-nav="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no">01</span>
+          <span class="section-kicker">About the Principal</span>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-meta">Evelyn R. Hartwell · Founding Partner</span>
+        </header>
 
-    <a href="#philosophy" class="hero__scroll" aria-label="Scroll to discover">
-      <span>Scroll</span>
-      <span class="hero__scroll-line"></span>
-    </a>
-  </section>
+        <div class="about-grid">
+          <div class="about-media reveal">
+            <figure class="portrait">
+              <img src="https://picsum.photos/seed/hartwell-counsel/720/900.jpg" alt="Formal portrait of Evelyn R. Hartwell, Founding Partner of Hartwell & Marsh" width="720" height="900" loading="lazy">
+              <div class="portrait-badge">
+                <span class="badge-title">Peer Review</span>
+                <span class="badge-text">AV Preeminent® — the highest rating, thirty consecutive years.</span>
+              </div>
+            </figure>
+            <p class="portrait-caption">
+              <strong>Evelyn R. Hartwell</strong>
+              <span>J.D., LL.M. — Columbia · Georgetown</span>
+            </p>
+          </div>
 
-  <!-- ============== PHILOSOPHY ============== -->
-  <section class="philosophy" id="philosophy">
-    <div class="container">
-      <div class="philosophy__head reveal">
-        <span class="eyebrow">Our Philosophy</span>
-        <p class="philosophy__lede">
-          Beauty is not applied — it is <em>revealed</em>. Every ritual at Maison Éclat begins with a quiet conversation, an honest reading of your skin, your hair, your story. Then we step back, and let the work speak.
+          <div class="about-body">
+            <h2 class="section-title reveal">The judgment <em>behind</em> the verdict.</h2>
+            <p class="reveal" style="--rd:.08s">
+              Evelyn Hartwell has spent three decades where consequences are measured in eight
+              and nine figures — trying bet-the-company disputes, protecting dynastic wealth,
+              and negotiating agreements designed to outlive the people who sign them. She has
+              argued from the Southern District of New York to the U.S. Supreme Court, and
+              before tribunals on three continents.
+            </p>
+            <p class="reveal" style="--rd:.14s">
+              Clients do not come to the firm for volume; they come for judgment. Every
+              engagement is led personally, staffed deliberately, and conducted with a
+              discretion that has made Hartwell &amp; Marsh counsel of record in some of the
+              most private matters in the country.
+            </p>
+
+            <blockquote class="pull-quote reveal" style="--rd:.2s">
+              <p>“The best outcome is usually the one that never required a courtroom — and
+              the only route there is being unquestionably ready for one.”</p>
+            </blockquote>
+
+            <div class="about-credentials">
+              <div class="cred-col reveal" style="--rd:.1s">
+                <h3>Bar Admissions</h3>
+                <ul class="cred-list">
+                  <li>New York — 1993</li>
+                  <li>Connecticut — 1995</li>
+                  <li>District of Columbia — 1998</li>
+                  <li>U.S. Supreme Court</li>
+                  <li>U.S. Court of Appeals, Second Circuit</li>
+                </ul>
+              </div>
+              <div class="cred-col reveal" style="--rd:.18s">
+                <h3>Education</h3>
+                <ul class="cred-list">
+                  <li>Columbia Law School — J.D.</li>
+                  <li>Harlan Fiske Stone Scholar</li>
+                  <li>Georgetown Law — LL.M., Taxation</li>
+                  <li>Williams College — B.A., Economics</li>
+                  <li>Fellow, American College of Trial Lawyers</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="about-ticker reveal">
+              <div class="tick-stat">
+                <span class="tick-num"><span data-count="47">0</span></span>
+                <span class="tick-label">Jury Trials to Verdict</span>
+              </div>
+              <div class="tick-stat">
+                <span class="tick-num"><span data-count="23">0</span></span>
+                <span class="tick-label">Appellate Arguments</span>
+              </div>
+              <div class="tick-stat">
+                <span class="tick-num"><span data-count="98" data-suffix="%">0</span></span>
+                <span class="tick-label">Favorable Outcomes</span>
+              </div>
+              <div class="tick-stat">
+                <span class="tick-num"><span data-count="4">0</span></span>
+                <span class="tick-label">New Matters a Year</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PRACTICE AREAS ======================= -->
+    <section class="section section-dark" id="practice" data-nav="practice">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no">02</span>
+          <span class="section-kicker">Practice Areas</span>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-meta">Four disciplines. One standard.</span>
+        </header>
+
+        <div class="practice-grid">
+          <div class="practice-intro reveal">
+            <h2 class="section-title">Matters of consequence, handled <em>personally</em>.</h2>
+            <p>
+              The firm deliberately maintains a narrow practice. Within it, every matter —
+              from a nine-figure arbitration to a single licensing agreement — receives the
+              same senior attention, the same preparation, and the same standard of care.
+            </p>
+            <div class="practice-note">
+              <i class="ri-shield-check-line" aria-hidden="true"></i>
+              <p>All engagements begin with a privileged consultation. Attorney–client
+              protections apply from the first conversation.</p>
+            </div>
+          </div>
+
+          <div class="practice-list">
+            <article class="acc open reveal">
+              <h3>
+                <button class="acc-head" id="acc-btn-1" aria-expanded="true" aria-controls="acc-panel-1" type="button">
+                  <span class="acc-no">01</span>
+                  <span class="acc-title">Corporate Litigation</span>
+                  <span class="acc-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+                </button>
+              </h3>
+              <div class="acc-body" id="acc-panel-1" role="region" aria-labelledby="acc-btn-1">
+                <div class="acc-body-inner">
+                  <div class="acc-content">
+                    <p class="acc-desc">Bet-the-company disputes demand counsel who has actually stood in front of a jury. We try and arbitrate shareholder actions, fiduciary claims, and commercial disputes — and the demonstrated willingness to go to verdict is precisely what settles most of them favorably.</p>
+                    <ul class="scope-list">
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Commercial trials &amp; arbitrations</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Shareholder &amp; partnership disputes</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Breach of fiduciary duty</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Emergency injunctive relief</li>
+                    </ul>
+                    <button class="text-link" type="button" data-modal-open data-practice="Corporate Litigation">
+                      Request a consultation <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="acc reveal">
+              <h3>
+                <button class="acc-head" id="acc-btn-2" aria-expanded="false" aria-controls="acc-panel-2" type="button">
+                  <span class="acc-no">02</span>
+                  <span class="acc-title">Wealth &amp; Estate Protection</span>
+                  <span class="acc-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+                </button>
+              </h3>
+              <div class="acc-body" id="acc-panel-2" role="region" aria-labelledby="acc-btn-2">
+                <div class="acc-body-inner">
+                  <div class="acc-content">
+                    <p class="acc-desc">Structures that protect what a lifetime built — and quietly transfer it intact. We design trusts and successions that survive scrutiny, taxation, and the second generation’s disagreements.</p>
+                    <ul class="scope-list">
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Estate &amp; dynastic trust design</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Family-enterprise succession</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Estate &amp; gift tax controversy</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Philanthropic vehicles &amp; foundations</li>
+                    </ul>
+                    <button class="text-link" type="button" data-modal-open data-practice="Wealth & Estate Protection">
+                      Request a consultation <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="acc reveal">
+              <h3>
+                <button class="acc-head" id="acc-btn-3" aria-expanded="false" aria-controls="acc-panel-3" type="button">
+                  <span class="acc-no">03</span>
+                  <span class="acc-title">Intellectual Property</span>
+                  <span class="acc-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+                </button>
+              </h3>
+              <div class="acc-body" id="acc-panel-3" role="region" aria-labelledby="acc-btn-3">
+                <div class="acc-body-inner">
+                  <div class="acc-content">
+                    <p class="acc-desc">Ideas are assets; we treat them that way. From trade-secret enforcement to global licensing architecture, we build protections that hold up the day the other side decides to test them.</p>
+                    <ul class="scope-list">
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Trade-secret misappropriation</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Patent &amp; trademark litigation</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Licensing &amp; technology transfer</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Global brand enforcement</li>
+                    </ul>
+                    <button class="text-link" type="button" data-modal-open data-practice="Intellectual Property">
+                      Request a consultation <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="acc reveal">
+              <h3>
+                <button class="acc-head" id="acc-btn-4" aria-expanded="false" aria-controls="acc-panel-4" type="button">
+                  <span class="acc-no">04</span>
+                  <span class="acc-title">Strategic Contracts</span>
+                  <span class="acc-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+                </button>
+              </h3>
+              <div class="acc-body" id="acc-panel-4" role="region" aria-labelledby="acc-btn-4">
+                <div class="acc-body-inner">
+                  <div class="acc-content">
+                    <p class="acc-desc">The twenty pages nobody reads carefully are the twenty pages that decide the dispute. We draft, negotiate, and defend the agreements your business will ultimately be judged by.</p>
+                    <ul class="scope-list">
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>High-value commercial agreements</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Joint ventures &amp; strategic alliances</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>M&amp;A counsel — buy-side &amp; sell-side</li>
+                      <li><i class="ri-arrow-right-s-line" aria-hidden="true"></i>Risk allocation &amp; indemnity design</li>
+                    </ul>
+                    <button class="text-link" type="button" data-modal-open data-practice="Strategic Contracts">
+                      Request a consultation <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PROVEN RESULTS ======================= -->
+    <section class="section section-light" id="results" data-nav="results">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no">03</span>
+          <span class="section-kicker">Proven Results</span>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-meta">A representative sampling — most engagements remain confidential.</span>
+        </header>
+
+        <div class="results-head-row">
+          <h2 class="section-title reveal">Outcomes, not <em>promises</em>.</h2>
+          <div class="filter-group reveal" role="group" aria-label="Filter case results by practice area">
+            <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All Matters</button>
+            <button class="filter-btn" type="button" data-filter="litigation" aria-pressed="false">Litigation</button>
+            <button class="filter-btn" type="button" data-filter="estate" aria-pressed="false">Estate &amp; Wealth</button>
+            <button class="filter-btn" type="button" data-filter="ip" aria-pressed="false">Intellectual Property</button>
+            <button class="filter-btn" type="button" data-filter="contracts" aria-pressed="false">Contracts</button>
+          </div>
+        </div>
+
+        <div class="case-list" id="caseList">
+          <article class="case-row reveal" data-cat="litigation">
+            <div class="case-meta"><span class="case-year">2024</span><span class="case-cat">Corporate Litigation</span></div>
+            <div class="case-main">
+              <h3>Cross-Border Shareholder Arbitration (ICC, Paris)</h3>
+              <p>Represented the founding shareholder of an infrastructure group in a valuation dispute spanning four jurisdictions and two governing-law regimes.</p>
+            </div>
+            <div class="case-outcome"><span class="outcome-value">$96M</span><span class="outcome-label">Award secured</span></div>
+          </article>
+
+          <article class="case-row reveal" data-cat="ip">
+            <div class="case-meta"><span class="case-year">2024</span><span class="case-cat">Intellectual Property</span></div>
+            <div class="case-main">
+              <h3>Trade-Secret Misappropriation — Federal Jury Trial (S.D.N.Y.)</h3>
+              <p>Secured a permanent injunction and compensatory damages after a three-week trial against a former executive and his new employer.</p>
+            </div>
+            <div class="case-outcome"><span class="outcome-value">$31M</span><span class="outcome-label">Damages + injunction</span></div>
+          </article>
+
+          <article class="case-row reveal" data-cat="estate">
+            <div class="case-meta"><span class="case-year">2023</span><span class="case-cat">Estate &amp; Wealth</span></div>
+            <div class="case-main">
+              <h3>Contested Estate of a Family Enterprise — Surrogate’s Court</h3>
+              <p>Defended the estate plan of a $580M family business against a collateral challenge brought by two branches of the family.</p>
+            </div>
+            <div class="case-outcome"><span class="outcome-value">Upheld</span><span class="outcome-label">Estate plan intact</span></div>
+          </article>
+
+          <article class="case-row reveal" data-cat="contracts">
+            <div class="case-meta"><span class="case-year">2023</span><span class="case-cat">Strategic Contracts</span></div>
+            <div class="case-main">
+              <h3>Renewal-Rights Arbitration — Global Supply Agreement</h3>
+              <p>Preserved exclusive distribution rights across fourteen territories after the counterparty attempted an eleventh-hour termination.</p>
+            </div>
+            <div class="case-outcome"><span class="outcome-value">$120M</span><span class="outcome-label">Contract value preserved</span></div>
+          </article>
+
+          <article class="case-row reveal" data-cat="litigation">
+            <div class="case-meta"><span class="case-year">2022</span><span class="case-cat">Corporate Litigation</span></div>
+            <div class="case-main">
+              <h3>Fiduciary-Duty Trial — Delaware Court of Chancery</h3>
+              <p>Judgment for the minority holders of a technology firm; affirmed in full on appeal over a two-firm defense.</p>
+            </div>
+            <div class="case-outcome"><span class="outcome-value">$84M</span><span class="outcome-label">Judgment affirmed</span></div>
+          </article>
+
+          <article class="case-row reveal" data-cat="ip">
+            <div class="case-meta"><span class="case-year">2022</span><span class="case-cat">Intellectual Property</span></div>
+            <div class="case-main">
+              <h3>Global Brand Enforcement Program</h3>
+              <p>Rebuilt and enforced a trademark portfolio across nineteen jurisdictions, prevailing in every opposition and cancellation proceeding filed.</p>
+            </div>
+            <div class="case-outcome"><span class="outcome-value">19</span><span class="outcome-label">Jurisdictions secured</span></div>
+          </article>
+
+          <article class="case-row reveal" data-cat="estate">
+            <div class="case-meta"><span class="case-year">2021</span><span class="case-cat">Estate &amp; Wealth</span></div>
+            <div class="case-main">
+              <h3>Three-Generational Trust Restructuring</h3>
+              <p>Restructured a 1962 dynasty trust ahead of a liquidity event, moving $410M through a transfer with zero estate-tax leakage.</p>
+            </div>
+            <div class="case-outcome"><span class="outcome-value">$0</span><span class="outcome-label">Estate tax at transfer</span></div>
+          </article>
+        </div>
+
+        <p class="results-footnote reveal">
+          <i class="ri-information-line" aria-hidden="true"></i>
+          Attorney Advertising — prior results do not guarantee a similar outcome. Every matter turns on its own facts.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================= TESTIMONIALS ======================= -->
+    <section class="section section-sand" id="testimonials" data-nav="results">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no">04</span>
+          <span class="section-kicker">Client Confidence</span>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-meta">Names withheld — client confidentiality.</span>
+        </header>
+
+        <div class="testi-wrap reveal">
+          <span class="quote-mark" aria-hidden="true">”</span>
+          <div class="testi-viewport" id="testiViewport" aria-live="polite">
+
+            <figure class="testi-slide is-active">
+              <blockquote>Evelyn Hartwell is the counsel you want when everything is on the line. She out-prepared a team of thirty and walked away with a verdict none of us believed possible.</blockquote>
+              <figcaption>
+                <span class="testi-name">Managing Director</span>
+                <span class="testi-role">Global Infrastructure Fund — Confidential Arbitration, 2023</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testi-slide">
+              <blockquote>Discreet, precise, and utterly unflappable. Our family’s affairs are orders of magnitude more secure — and more private — than they were a decade ago.</blockquote>
+              <figcaption>
+                <span class="testi-name">Principal</span>
+                <span class="testi-role">Multi-Generational Family Office — Estate Restructuring, 2021</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testi-slide">
+              <blockquote>She negotiated a licensing structure that turned a liability into our most profitable division. “Strategic” is not marketing language at this firm — it is the daily practice.</blockquote>
+              <figcaption>
+                <span class="testi-name">Chief Executive</span>
+                <span class="testi-role">European Technology Group — IP &amp; Licensing, 2022</span>
+              </figcaption>
+            </figure>
+
+          </div>
+
+          <div class="testi-controls">
+            <button class="testi-btn" type="button" id="testiPrev" aria-label="Previous testimonial"><i class="ri-arrow-left-line" aria-hidden="true"></i></button>
+            <span class="testi-count"><span id="testiCurrent">01</span> / 03</span>
+            <button class="testi-btn" type="button" id="testiNext" aria-label="Next testimonial"><i class="ri-arrow-right-line" aria-hidden="true"></i></button>
+          </div>
+          <div class="testi-progress" aria-hidden="true"><span id="testiProgress"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= INSIGHTS ======================= -->
+    <section class="section section-light" id="insights" data-nav="insights">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no">05</span>
+          <span class="section-kicker">Insights &amp; Commentary</span>
+          <span class="section-rule" aria-hidden="true"></span>
+          <span class="section-meta">Occasional writing — deliberately so.</span>
+        </header>
+
+        <h2 class="section-title reveal">Notes from the <em>practice</em>.</h2>
+
+        <div class="insight-list reveal">
+
+          <article class="insight">
+            <h3>
+              <button class="insight-head" id="ins-btn-1" aria-expanded="false" aria-controls="ins-panel-1" type="button">
+                <span class="insight-frame">
+                  <span class="insight-meta">
+                    <span class="insight-date">Mar 2025</span>
+                    <span class="insight-cat">Commentary</span>
+                    <span class="insight-time">9 min read</span>
+                  </span>
+                  <span class="insight-title">The Quiet Weapon: Preliminary Injunctions in Trade-Secret Cases</span>
+                </span>
+                <span class="insight-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+              </button>
+            </h3>
+            <div class="insight-body" id="ins-panel-1" role="region" aria-labelledby="ins-btn-1">
+              <div class="insight-body-inner">
+                <div class="insight-content">
+                  <p>Ninety percent of trade-secret matters are effectively decided in the first six weeks, long before discovery matures. A well-timed injunction does not merely stop the bleeding — it re-prices the entire settlement conversation, because the other side’s business plan now depends on a remedy only you can concede.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="insight">
+            <h3>
+              <button class="insight-head" id="ins-btn-2" aria-expanded="false" aria-controls="ins-panel-2" type="button">
+                <span class="insight-frame">
+                  <span class="insight-meta">
+                    <span class="insight-date">Jan 2025</span>
+                    <span class="insight-cat">White Paper</span>
+                    <span class="insight-time">22 min read</span>
+                  </span>
+                  <span class="insight-title">Succession Without Ceremony: Structuring the Family-Enterprise Transition</span>
+                </span>
+                <span class="insight-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+              </button>
+            </h3>
+            <div class="insight-body" id="ins-panel-2" role="region" aria-labelledby="ins-btn-2">
+              <div class="insight-body-inner">
+                <div class="insight-content">
+                  <p>Most succession plans fail for reasons that have nothing to do with law — and almost everything to do with sequencing. This paper sets out the five structural decisions that determine whether the second generation keeps the enterprise, or merely its proceeds.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="insight">
+            <h3>
+              <button class="insight-head" id="ins-btn-3" aria-expanded="false" aria-controls="ins-panel-3" type="button">
+                <span class="insight-frame">
+                  <span class="insight-meta">
+                    <span class="insight-date">Nov 2024</span>
+                    <span class="insight-cat">Commentary</span>
+                    <span class="insight-time">7 min read</span>
+                  </span>
+                  <span class="insight-title">Arbitration Clauses That Actually Protect You</span>
+                </span>
+                <span class="insight-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+              </button>
+            </h3>
+            <div class="insight-body" id="ins-panel-3" role="region" aria-labelledby="ins-btn-3">
+              <div class="insight-body-inner">
+                <div class="insight-content">
+                  <p>The standard arbitration clause is a bet on process; the good one is a bet on outcome. The difference is usually nine words or fewer — most often concerning interim relief, and who pays for the privilege of being wrong.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="insight">
+            <h3>
+              <button class="insight-head" id="ins-btn-4" aria-expanded="false" aria-controls="ins-panel-4" type="button">
+                <span class="insight-frame">
+                  <span class="insight-meta">
+                    <span class="insight-date">Sep 2024</span>
+                    <span class="insight-cat">Client Briefing</span>
+                    <span class="insight-time">12 min read</span>
+                  </span>
+                  <span class="insight-title">Before the Sunset: Estate Positioning in an Uncertain Window</span>
+                </span>
+                <span class="insight-icon" aria-hidden="true"><i class="ri-add-line"></i></span>
+              </button>
+            </h3>
+            <div class="insight-body" id="ins-panel-4" role="region" aria-labelledby="ins-btn-4">
+              <div class="insight-body-inner">
+                <div class="insight-content">
+                  <p>Legislative timelines are not planning deadlines — but they are pricing signals. This briefing models three exemption scenarios and identifies the transfers that remain efficient under every one of them, and the single structure that only works if executed early.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="insights-note reveal">
+          <i class="ri-lock-line" aria-hidden="true"></i>
+          Full memoranda are provided to clients of the firm and, on request, under a mutual confidentiality understanding.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================= CTA BAND ======================= -->
+    <section class="cta-band grain">
+      <div class="container">
+        <p class="kicker kicker-center"><span class="kicker-mark">§</span> The First Conversation Is Privileged <span class="kicker-mark">§</span></p>
+        <h2 class="cta-title">If the stakes are high, <em>the counsel matters</em>.</h2>
+        <button class="btn btn-solid" type="button" data-modal-open>
+          Book a Consultation <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+        </button>
+        <span class="cta-note">Response within one business day · +1 (212) 555-0147 · 590 Madison Avenue, 31st Floor</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer grain">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand" aria-label="Hartwell and Marsh — return to top">
+          <span class="brand-mark" aria-hidden="true">HM</span>
+          <span class="brand-text">
+            <span class="brand-name">Hartwell <em>&amp;</em> Marsh</span>
+            <span class="brand-sub">Private Counsel</span>
+          </span>
+        </a>
+        <p class="footer-text">
+          Counsel to founders, boards, and family offices since 1993. Founded by Evelyn R.
+          Hartwell and the late Daniel C. Marsh. Admitted in New York, Connecticut, and the
+          District of Columbia.
         </p>
       </div>
 
-      <div class="philosophy__grid">
-        <article class="reveal">
-          <span class="philosophy__num">01</span>
-          <h3>Bespoke, never menu-driven</h3>
-          <p>Our consultations are unhurried. We blend treatments to your skin's mood, your hair's memory, the season you carry through the door.</p>
-        </article>
-        <article class="reveal">
-          <span class="philosophy__num">02</span>
-          <h3>Master artists, not technicians</h3>
-          <p>Every member of our atelier trained in Paris, Milan, or Tokyo before joining us. A minimum of ten years' independent practice — non-negotiable.</p>
-        </article>
-        <article class="reveal">
-          <span class="philosophy__num">03</span>
-          <h3>Quiet luxury, certified clean</h3>
-          <p>We work exclusively with biodynamic, reef-safe, cruelty-free houses. No parabens, no phthalates, no shortcuts. The skin knows the difference.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h4 class="footer-heading">Navigate</h4>
+        <ul class="footer-list">
+          <li><a href="#about">About the Principal</a></li>
+          <li><a href="#practice">Practice Areas</a></li>
+          <li><a href="#results">Proven Results</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#" data-modal-open>Book Consultation</a></li>
+        </ul>
+      </nav>
 
-  <!-- ============== SERVICES & PRICING ============== -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="services__head reveal">
-        <span class="eyebrow">The Menu</span>
-        <h2 class="services__title">Rituals &amp; pricing</h2>
-        <p class="services__intro">Each treatment begins with a complimentary consultation and ends with a hand-blended take-home infusion, selected for the week ahead.</p>
-      </div>
-
-      <div class="services__tabs reveal" role="tablist" aria-label="Service categories">
-        <button class="tab is-active" role="tab" aria-selected="true" data-tab="hair">Hair Styling</button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="skin">Skincare &amp; Facials</button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="nails">Nail Art</button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="spa">Spa &amp; Massages</button>
-      </div>
-
-      <div class="services__panels">
-        <!-- HAIR -->
-        <div class="panel is-active" data-panel="hair" role="tabpanel">
-          <ul class="menu">
-            <li class="menu__item reveal">
-              <div class="menu__head">
-                <h3 class="menu__name">Couture Cut &amp; Style</h3>
-                <span class="menu__price">$180</span>
-              </div>
-              <p class="menu__desc">A sculptural cut, drawn from your bone structure and lifestyle. Includes wash, scalp massage, and thermal finish.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">90 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Couture Cut & Style">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item reveal">
-              <div class="menu__head">
-                <h3 class="menu__name">Balayage Lumière</h3>
-                <span class="menu__price">$320</span>
-              </div>
-              <p class="menu__desc">Hand-painted, sun-kissed dimension. Freehand technique, no foils — designed to grow out softly for six to eight months.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">180 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Balayage Lumière">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item reveal">
-              <div class="menu__head">
-                <h3 class="menu__name">Keratin Renewal Therapy</h3>
-                <span class="menu__price">$280</span>
-              </div>
-              <p class="menu__desc">Formaldehyde-free smoothing treatment with hydrolyzed silk. Eliminates frizz for twelve weeks without compromising natural movement.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">150 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Keratin Renewal Therapy">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item reveal">
-              <div class="menu__head">
-                <h3 class="menu__name">Bridal Hair Sculpting</h3>
-                <span class="menu__price">$450</span>
-              </div>
-              <p class="menu__desc">A two-hour private suite with Isabelle, our creative director. Includes trial session, day-of styling, and one companion's hair.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">120 minutes · suite</span>
-                <button class="menu__book" data-trigger-book data-service="Bridal Hair Sculpting">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item reveal">
-              <div class="menu__head">
-                <h3 class="menu__name">Gloss Treatment &amp; Blowout</h3>
-                <span class="menu__price">$120</span>
-              </div>
-              <p class="menu__desc">A demi-permanent gloss to revive tone and luminosity, finished with a thermal blow-dry styled to your preference.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">60 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Gloss Treatment & Blowout">Book this ritual →</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- SKIN -->
-        <div class="panel" data-panel="skin" role="tabpanel" hidden>
-          <ul class="menu">
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Caviar Lifting Facial</h3>
-                <span class="menu__price">$240</span>
-              </div>
-              <p class="menu__desc">A manual-lift massage ritual paired with caviar extract and bio-peptides. Visible firming that deepens over the following 72 hours.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">75 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Caviar Lifting Facial">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">24K Gold Infusion Ritual</h3>
-                <span class="menu__price">$380</span>
-              </div>
-              <p class="menu__desc">Our signature. Colloidal gold, narcissus bulb extract, and a slow lymphatic drainage massage. Skin is left luminous for ten days.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">90 minutes · signature</span>
-                <button class="menu__book" data-trigger-book data-service="24K Gold Infusion Ritual">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Deep HydraGlass Facial</h3>
-                <span class="menu__price">$180</span>
-              </div>
-              <p class="menu__desc">Multi-layer hydration with hyaluronic acid, squalane, and a cooling glass massage. Designed for dull, dehydrated, or jet-lagged skin.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">60 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Deep HydraGlass Facial">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Microcurrent Sculpting</h3>
-                <span class="menu__price">$220</span>
-              </div>
-              <p class="menu__desc">A non-invasive lift using low-frequency microcurrents. Defines jawline, lifts brows, and contours cheekbones — no downtime, no redness.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">70 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Microcurrent Sculpting">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Bespoke Diamond Peel</h3>
-                <span class="menu__price">$200</span>
-              </div>
-              <p class="menu__desc">Mechanical resurfacing with graduated diamond tips. Refines texture, softens fine lines, and prepares skin for events within 48 hours.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">50 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Bespoke Diamond Peel">Book this ritual →</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- NAILS -->
-        <div class="panel" data-panel="nails" role="tabpanel" hidden>
-          <ul class="menu">
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Couture Manicure</h3>
-                <span class="menu__price">$75</span>
-              </div>
-              <p class="menu__desc">A meticulous file, cuticle care, hand mask, and polish. Ten-minute massage and a flawless lacquer finish.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">45 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Couture Manicure">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Japanese Gel Art</h3>
-                <span class="menu__price">$130</span>
-              </div>
-              <p class="menu__desc">Brush-painted gel art by Marcus — florals, gradients, foil inlay, or hand-mixed bespoke tones. Lasts three weeks without chipping.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">90 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Japanese Gel Art">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Crystal Encrusté Pedicure</h3>
-                <span class="menu__price">$160</span>
-              </div>
-              <p class="menu__desc">A spa pedicure with crystal-file technique, warm stone massage, and a hand-set crystal finish on the toes of your choosing.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">75 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Crystal Encrusté Pedicure">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Bridal Nail Suite</h3>
-                <span class="menu__price">$220</span>
-              </div>
-              <p class="menu__desc">A private two-hour suite for the bride — manicure, pedicure, and a custom-designed accent nail. Champagne and canapés included.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">120 minutes · suite</span>
-                <button class="menu__book" data-trigger-book data-service="Bridal Nail Suite">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Soak-Off &amp; Refresh</h3>
-                <span class="menu__price">$50</span>
-              </div>
-              <p class="menu__desc">A gentle removal of existing gel or shellac, with cuticle conditioning and a strengthening base coat for recovery between appointments.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">30 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Soak-Off & Refresh">Book this ritual →</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- SPA -->
-        <div class="panel" data-panel="spa" role="tabpanel" hidden>
-          <ul class="menu">
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Aromatherapy Silk Massage</h3>
-                <span class="menu__price">$190</span>
-              </div>
-              <p class="menu__desc">A slow, flowing massage with a hand-blended essential oil chosen for your nervous system. Drains tension without deep pressure.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">70 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Aromatherapy Silk Massage">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Hot Stone Embrace</h3>
-                <span class="menu__price">$220</span>
-              </div>
-              <p class="menu__desc">Volcanic basalt stones warmed to 50°C and placed along the spine, palms, and feet. Melts chronic muscular tension in a single session.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">80 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Hot Stone Embrace">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Lymphatic Drainage Ritual</h3>
-                <span class="menu__price">$180</span>
-              </div>
-              <p class="menu__desc">A feather-light, deeply precise technique following the Vodder method. Reduces puffiness, supports immunity, leaves skin visibly lifted.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">60 minutes</span>
-                <button class="menu__book" data-trigger-book data-service="Lymphatic Drainage Ritual">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Four-Hand Synchrony</h3>
-                <span class="menu__price">$380</span>
-              </div>
-              <p class="menu__desc">Two therapists, one synchronized choreography. The mind cannot track four hands at once — it surrenders within minutes. Our most requested ritual.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">60 minutes · signature</span>
-                <button class="menu__book" data-trigger-book data-service="Four-Hand Synchrony">Book this ritual →</button>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__head">
-                <h3 class="menu__name">Couple's Sanctuary Suite</h3>
-                <span class="menu__price">$540</span>
-              </div>
-              <p class="menu__desc">A private suite with two tables, a soaking tub, and a tea ceremony. Includes a 60-minute synchronized massage and 30 minutes of stillness.</p>
-              <div class="menu__meta">
-                <span class="menu__duration">90 minutes · suite</span>
-                <button class="menu__book" data-trigger-book data-service="Couple's Sanctuary Suite">Book this ritual →</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <p class="services__footnote reveal">
-        <span class="ornament">✦</span> All treatments include a complimentary glass of champagne or house-infused herbal tea. Members of our Atelier Circle receive 15% off all rituals and priority booking.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============== STYLISTS ============== -->
-  <section class="stylists" id="stylists">
-    <div class="container">
-      <div class="stylists__head reveal">
-        <span class="eyebrow">The Atelier</span>
-        <h2 class="stylists__title">Master artists behind the chair</h2>
-        <p class="stylists__intro">Each member of our atelier trained in Paris, Milan, Tokyo, or Zurich before joining us — and brings a signature hand you will recognize by name.</p>
-      </div>
-
-      <div class="stylists__grid">
-        <article class="artist reveal">
-          <div class="artist__photo">
-            <img src="https://picsum.photos/seed/stylist-isabelle-moreau-paris/600/780" alt="Portrait of Isabelle Moreau, Creative Director">
-          </div>
-          <div class="artist__body">
-            <span class="artist__role">Creative Director</span>
-            <h3 class="artist__name">Isabelle Moreau</h3>
-            <p class="artist__specialty">Couture color · Balayage · Bridal sculpture</p>
-            <p class="artist__bio">Trained at the Franck Provost atelier in Paris. Twelve years on Rodeo Drive. Reads hair the way a sommelier reads a cellar.</p>
-            <a href="#" class="artist__ig" aria-label="Isabelle Moreau on Instagram">@isabelle.eclat</a>
-          </div>
-        </article>
-
-        <article class="artist reveal">
-          <div class="artist__photo">
-            <img src="https://picsum.photos/seed/stylist-sophia-lin-tokyo/600/780" alt="Portrait of Sophia Lin, Senior Aesthetician">
-          </div>
-          <div class="artist__body">
-            <span class="artist__role">Senior Aesthetician</span>
-            <h3 class="artist__name">Sophia Lin</h3>
-            <p class="artist__specialty">HydraGlass Facials · Microcurrent · Skin diagnosis</p>
-            <p class="artist__bio">Tokyo-trained, certified in Vodder lymphatic drainage. Believes the skin is a record of the last six months of your life.</p>
-            <a href="#" class="artist__ig" aria-label="Sophia Lin on Instagram">@sophia.skin</a>
-          </div>
-        </article>
-
-        <article class="artist reveal">
-          <div class="artist__photo">
-            <img src="https://picsum.photos/seed/stylist-marcus-bellini-milan/600/780" alt="Portrait of Marcus Bellini, Nail Art Curator">
-          </div>
-          <div class="artist__body">
-            <span class="artist__role">Nail Art Curator</span>
-            <h3 class="artist__name">Marcus Bellini</h3>
-            <p class="artist__specialty">Japanese gel · Hand-painted art · Bridal suites</p>
-            <p class="artist__bio">Milan-born, with eight years at the Bulgari Hotels. Treats each nail as a small canvas — never repeats a design.</p>
-            <a href="#" class="artist__ig" aria-label="Marcus Bellini on Instagram">@marcus.bellini</a>
-          </div>
-        </article>
-
-        <article class="artist reveal">
-          <div class="artist__photo">
-            <img src="https://picsum.photos/seed/stylist-elena-vasquez-zurich/600/780" alt="Portrait of Elena Vasquez, Spa Director">
-          </div>
-          <div class="artist__body">
-            <span class="artist__role">Spa Director</span>
-            <h3 class="artist__name">Elena Vasquez</h3>
-            <p class="artist__specialty">Lymphatic wellness · Aromatherapy · Four-hand synchrony</p>
-            <p class="artist__bio">Zurich-certified in clinical massage and aromatherapy. Designs every oil blend in-house, by hand, weekly.</p>
-            <a href="#" class="artist__ig" aria-label="Elena Vasquez on Instagram">@elena.spa</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== GALLERY ============== -->
-  <section class="gallery" id="gallery">
-    <div class="container">
-      <div class="gallery__head reveal">
-        <span class="eyebrow">Portfolio</span>
-        <h2 class="gallery__title">Selected work</h2>
-        <p class="gallery__intro">A rotating selection from our atelier — balayage finishes, facials, nail art, and bridal suites. Photographed in natural light, untouched.</p>
-      </div>
-
-      <div class="gallery__filters reveal" role="tablist" aria-label="Gallery filters">
-        <button class="filter is-active" data-filter="all">All work</button>
-        <button class="filter" data-filter="hair">Hair</button>
-        <button class="filter" data-filter="nails">Nails</button>
-        <button class="filter" data-filter="makeup">Makeup</button>
-        <button class="filter" data-filter="skin">Skin</button>
-      </div>
-
-      <div class="gallery__grid">
-        <a href="#" class="tile reveal" data-cat="hair">
-          <img src="https://picsum.photos/seed/gallery-hair-balayage-lumiere-finish/600/780" alt="Balayage Lumière finish on long hair">
-          <span class="tile__label">Balayage Lumière · Isabelle</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="skin">
-          <img src="https://picsum.photos/seed/gallery-skin-gold-infusion-glow/600/780" alt="24K Gold Infusion facial result">
-          <span class="tile__label">24K Gold Ritual · Sophia</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="nails">
-          <img src="https://picsum.photos/seed/gallery-nails-japanese-gel-floral/600/780" alt="Japanese gel art with floral detail">
-          <span class="tile__label">Japanese Gel · Marcus</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="makeup">
-          <img src="https://picsum.photos/seed/gallery-makeup-bridal-soft-glow/600/780" alt="Bridal soft-glow makeup">
-          <span class="tile__label">Bridal Suite · Soft Glow</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="hair">
-          <img src="https://picsum.photos/seed/gallery-hair-bridal-sculpture-low-chignon/600/780" alt="Low chignon bridal sculpture">
-          <span class="tile__label">Bridal Sculpture · Isabelle</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="skin">
-          <img src="https://picsum.photos/seed/gallery-skin-hydraglass-fresh-dew/600/780" alt="HydraGlass facial result with dewy finish">
-          <span class="tile__label">HydraGlass · Sophia</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="nails">
-          <img src="https://picsum.photos/seed/gallery-nails-crystal-encrusted-pedicure/600/780" alt="Crystal-encrusted pedicure detail">
-          <span class="tile__label">Crystal Encrusté · Marcus</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="makeup">
-          <img src="https://picsum.photos/seed/gallery-makeup-editorial-evening-eye/600/780" alt="Editorial evening makeup">
-          <span class="tile__label">Editorial Evening · Atelier</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="hair">
-          <img src="https://picsum.photos/seed/gallery-hair-couture-cut-blunt-bob/600/780" alt="Couture blunt bob cut">
-          <span class="tile__label">Couture Cut · Isabelle</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="skin">
-          <img src="https://picsum.photos/seed/gallery-skin-caviar-lifting-jawline/600/780" alt="Caviar lifting facial result">
-          <span class="tile__label">Caviar Lift · Sophia</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="nails">
-          <img src="https://picsum.photos/seed/gallery-nails-bridal-suite-magnetic/600/780" alt="Bridal nail suite with magnetic finish">
-          <span class="tile__label">Bridal Suite · Marcus</span>
-        </a>
-        <a href="#" class="tile reveal" data-cat="makeup">
-          <img src="https://picsum.photos/seed/gallery-makeup-natural-radiance-day/600/780" alt="Natural radiance day makeup">
-          <span class="tile__label">Natural Day · Atelier</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== REVIEWS ============== -->
-  <section class="reviews" id="reviews">
-    <div class="container">
-      <div class="reviews__head reveal">
-        <span class="eyebrow">Words from our clients</span>
-        <h2 class="reviews__title">Verified, unedited, ours to carry.</h2>
-      </div>
-
-      <div class="reviews__featured reveal">
-        <span class="reviews__quote-mark" aria-hidden="true">"</span>
-        <blockquote class="reviews__featured-quote">
-          Isabelle understood my hair's history in five minutes. The balayage she painted has grown out beautifully for eight months — no harsh line, no regret. I have not been to another salon since.
-        </blockquote>
-        <div class="reviews__featured-cite">
-          <span class="reviews__featured-name">Vivian Zhao</span>
-          <span class="reviews__featured-role">Creative Director · Verified client since 2019</span>
-        </div>
-        <div class="reviews__stars" aria-label="5 out of 5 stars">★★★★★</div>
-      </div>
-
-      <div class="reviews__grid">
-        <article class="review reveal">
-          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p>They held our bridal suite with such calm. Marcus did my nails at 7am, Sophia sculpted my skin by 9, and Isabelle set my hair by noon. I have never felt so held on a day that could have been chaos.</p>
-          <footer>
-            <span class="review__name">Catherine Wells</span>
-            <span class="review__role">Bride · Spring 2024</span>
-          </footer>
-        </article>
-        <article class="review reveal">
-          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p>The 24K Gold Ritual left me sitting in the car for ten minutes before I could drive. I just wanted to stay in that quiet. Worth every dollar, twice over.</p>
-          <footer>
-            <span class="review__name">Aisha Rahman</span>
-            <span class="review__role">Editor-in-Chief</span>
-          </footer>
-        </article>
-        <article class="review reveal">
-          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p>I have searched for a quiet, intelligent aesthetician for fifteen years. Sophia is the one. She reads skin like a librarian reads first editions.</p>
-          <footer>
-            <span class="review__name">Olivia Hartman</span>
-            <span class="review__role">Architect</span>
-          </footer>
-        </article>
-        <article class="review reveal">
-          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p>I came in for a men's cut and left with a ritual. The scalp massage alone is worth the trip across town. Marcus also reshaped my nails — I didn't know they could look like this.</p>
-          <footer>
-            <span class="review__name">Daniel Brooks</span>
-            <span class="review__role">Musician</span>
-          </footer>
-        </article>
-        <article class="review reveal">
-          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p>Their couple's suite is the only place my husband and I have shared silence that felt chosen, not awkward. We now come every month, without fail.</p>
-          <footer>
-            <span class="review__name">Mireille Dubois</span>
-            <span class="review__role">Restaurateur</span>
-          </footer>
-        </article>
-        <article class="review reveal">
-          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p>Elena blended an oil for my anxiety that I now refuse to travel without. The four-hand synchrony massage is, without exaggeration, the closest I have come to meditation in ten years.</p>
-          <footer>
-            <span class="review__name">Priya Anand</span>
-            <span class="review__role">Venture Partner</span>
-          </footer>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== FOOTER ============== -->
-  <footer class="footer" id="contact">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="footer__logo">Maison Éclat</span>
-        <span class="footer__tagline">Beauty Atelier &amp; Spa · Beverly Hills</span>
-        <p class="footer__copy">A sanctuary of couture beauty, skincare, and wellness rituals. Quiet luxury, certified clean, since 2014.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="Pinterest">Pinterest</a>
-          <a href="#" aria-label="TikTok">TikTok</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="footer__col">
-        <h4>Hours</h4>
-        <ul>
-          <li><span>Monday – Friday</span><span>9:00 – 20:00</span></li>
-          <li><span>Saturday</span><span>9:00 – 19:00</span></li>
-          <li><span>Sunday</span><span>10:00 – 18:00</span></li>
-          <li><span>Holidays</span><span>By appointment</span></li>
+      <div class="footer-col">
+        <h4 class="footer-heading">The Office</h4>
+        <ul class="footer-list footer-contact">
+          <li><i class="ri-map-pin-line" aria-hidden="true"></i><span>590 Madison Avenue, 31st Floor<br>New York, NY 10022</span></li>
+          <li><i class="ri-phone-line" aria-hidden="true"></i><a href="tel:+12125550147">+1 (212) 555-0147</a></li>
+          <li><i class="ri-mail-line" aria-hidden="true"></i><a href="mailto:counsel@hartwellmarsh.com">counsel@hartwellmarsh.com</a></li>
         </ul>
       </div>
 
-      <div class="footer__col">
-        <h4>Visit</h4>
-        <address>
-          9614 Wilshire Boulevard<br>
-          Beverly Hills, CA 90212<br>
-          <a href="https://maps.google.com/?q=9614+Wilshire+Blvd+Beverly+Hills+CA" target="_blank" rel="noopener">Open in Google Maps →</a>
-        </address>
-        <a href="tel:+13105550192" class="footer__phone">+1 (310) 555-0192</a>
-        <a href="mailto:concierge@maisoneclat.com" class="footer__email">concierge@maisoneclat.com</a>
-      </div>
-
-      <div class="footer__col footer__newsletter">
-        <h4>Atelier Circle</h4>
-        <p>Quarterly notes on rituals, seasonal offerings, and members-only events. No more than four letters a year.</p>
-        <form class="newsletter" id="newsletterForm" novalidate>
-          <label class="newsletter__field">
-            <span class="sr-only">Email address</span>
-            <input type="email" name="email" placeholder="Your email" required>
-          </label>
-          <button type="submit" class="btn btn--primary">Subscribe</button>
-          <small class="newsletter__success" id="newsletterSuccess">Welcome to the Circle. We'll be in touch.</small>
-        </form>
+      <div class="footer-col">
+        <h4 class="footer-heading">Hours</h4>
+        <ul class="footer-list hours">
+          <li><span class="hours-day">Monday – Friday</span><span>9:00 – 18:00</span></li>
+          <li><span class="hours-day">Saturday</span><span>By appointment</span></li>
+          <li><span class="hours-day">Emergency line</span><span>24 / 7</span></li>
+        </ul>
       </div>
     </div>
 
-    <div class="footer__bottom">
-      <div class="container footer__bottom-inner">
-        <span>© 2024 Maison Éclat. All rights reserved.</span>
-        <nav class="footer__legal">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Accessibility</a>
-          <a href="#">Careers</a>
-        </nav>
-        <span class="footer__credit">Crafted in Beverly Hills</span>
-      </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2025</span> Hartwell &amp; Marsh LLP. All rights reserved.</p>
+      <p>Attorney Advertising · NYS Bar Reg. No. 2-148-773 · Prior results do not guarantee a similar outcome.</p>
+      <a class="to-top" href="#top">Back to top <i class="ri-arrow-up-line" aria-hidden="true"></i></a>
+    </div>
+
+    <p class="footer-wordmark" aria-hidden="true">Hartwell &amp; Marsh</p>
+
+    <div class="container">
+      <p class="footer-disclaimer">
+        The content of this site is offered for general informational purposes only. It does not
+        constitute legal advice, and reading or responding to it does not create an
+        attorney–client relationship. No outcome described on this site should be taken as a
+        prediction of future results; every matter turns on its own facts and governing law.
+        Please do not transmit privileged documents through this site until an engagement letter
+        has been executed. Hartwell &amp; Marsh LLP is a New York registered limited liability
+        partnership.
+      </p>
     </div>
   </footer>
 
-  <!-- ============== BOOKING MODAL ============== -->
-  <div class="modal" id="bookingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal__backdrop" data-close></div>
-    <div class="modal__dialog" aria-labelledby="modalTitle">
-      <button class="modal__close" data-close aria-label="Close dialog">
-        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+  <!-- ======================= CONSULTATION MODAL ======================= -->
+  <div class="modal" id="consultModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-modal-close aria-label="Close consultation form">
+        <i class="ri-close-line" aria-hidden="true"></i>
       </button>
 
-      <aside class="modal__aside">
-        <span class="eyebrow eyebrow--light">Reservation</span>
-        <h2 class="modal__title" id="modalTitle">Reserve your ritual</h2>
-        <p class="modal__intro">Tell us a little about the moment you'd like to create. Our concierge will confirm within two hours during business hours.</p>
+      <div class="modal-scroll">
+        <header class="modal-head">
+          <p class="kicker"><i class="ri-lock-line" aria-hidden="true"></i>Privileged &amp; Confidential</p>
+          <h3 id="modalTitle">Request a Consultation</h3>
+          <p class="modal-sub">No obligation. Every inquiry is answered personally within one business day.</p>
+        </header>
 
-        <div class="modal__contact">
-          <div class="modal__contact-row">
-            <span class="modal__contact-label">Concierge</span>
-            <a href="tel:+13105550192">+1 (310) 555-0192</a>
+        <form id="consultForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="fName">Full Name <span class="req">*</span></label>
+              <input type="text" id="fName" name="name" placeholder="e.g. Jonathan Reyes" autocomplete="name" required>
+              <p class="field-error">Please enter your full name.</p>
+            </div>
+            <div class="field">
+              <label for="fPhone">Phone <span class="req">*</span></label>
+              <input type="tel" id="fPhone" name="phone" placeholder="+1 (___) ___-____" autocomplete="tel" required>
+              <p class="field-error">Please enter a valid phone number.</p>
+            </div>
           </div>
-          <div class="modal__contact-row">
-            <span class="modal__contact-label">Atelier</span>
-            <span>9614 Wilshire Blvd, Beverly Hills</span>
+
+          <div class="field">
+            <label for="fEmail">Email <span class="req">*</span></label>
+            <input type="email" id="fEmail" name="email" placeholder="name@company.com" autocomplete="email" required>
+            <p class="field-error">Please enter a valid email address.</p>
           </div>
-          <div class="modal__contact-row">
-            <span class="modal__contact-label">Hours</span>
-            <span>Mon–Fri 9–8 · Sat 9–7 · Sun 10–6</span>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="fArea">Practice Area <span class="req">*</span></label>
+              <div class="select-wrap">
+                <select id="fArea" name="practice" required>
+                  <option value="" selected disabled>Select a practice area</option>
+                  <option value="Corporate Litigation">Corporate Litigation</option>
+                  <option value="Wealth & Estate Protection">Wealth &amp; Estate Protection</option>
+                  <option value="Intellectual Property">Intellectual Property</option>
+                  <option value="Strategic Contracts">Strategic Contracts</option>
+                  <option value="Other / Not Sure">Other / Not sure yet</option>
+                </select>
+                <i class="ri-arrow-down-s-line" aria-hidden="true"></i>
+              </div>
+              <p class="field-error">Please select a practice area.</p>
+            </div>
+            <div class="field">
+              <label for="fDate">Preferred Date <span class="req">*</span></label>
+              <input type="date" id="fDate" name="date" required>
+              <p class="field-error">Please choose a future date.</p>
+            </div>
           </div>
+
+          <fieldset class="field time-field">
+            <legend>Preferred Time <span class="req">*</span></legend>
+            <div class="slot-grid">
+              <input type="radio" id="t1" name="time" value="9:00 AM"><label for="t1">9:00 AM</label>
+              <input type="radio" id="t2" name="time" value="11:00 AM"><label for="t2">11:00 AM</label>
+              <input type="radio" id="t3" name="time" value="1:30 PM"><label for="t3">1:30 PM</label>
+              <input type="radio" id="t4" name="time" value="3:30 PM"><label for="t4">3:30 PM</label>
+              <input type="radio" id="t5" name="time" value="5:00 PM"><label for="t5">5:00 PM</label>
+            </div>
+            <p class="field-error">Please select a preferred time.</p>
+          </fieldset>
+
+          <div class="field">
+            <label for="fNotes">Brief Description of the Matter <span class="opt">optional</span></label>
+            <textarea id="fNotes" name="notes" rows="3" maxlength="600" placeholder="A sentence or two is sufficient — details are best discussed in person."></textarea>
+            <p class="char-count"><span id="charCount">0</span>/600</p>
+          </div>
+
+          <div class="field checkbox-field">
+            <input type="checkbox" id="fConsent" name="consent" required>
+            <label for="fConsent">
+              <span class="cb-text">I understand that submitting this form does not itself create an attorney–client relationship.<span class="req"> *</span></span>
+            </label>
+            <p class="field-error">Please acknowledge this notice to continue.</p>
+          </div>
+
+          <button type="submit" class="btn btn-solid btn-block" id="formSubmit">
+            Submit Request <i class="ri-arrow-right-line" aria-hidden="true"></i>
+          </button>
+
+          <p class="form-footnote">
+            <i class="ri-shield-check-line" aria-hidden="true"></i>
+            Held in strict confidence. Attorney–client protections apply from the first conversation.
+          </p>
+        </form>
+
+        <div class="modal-success" id="modalSuccess" hidden>
+          <div class="success-icon"><i class="ri-check-line" aria-hidden="true"></i></div>
+          <h3>Consultation Requested</h3>
+          <p class="success-ref">Reference <strong id="refNo">HM-0000-0000</strong></p>
+          <p id="successSummary">Thank you.</p>
+          <p class="success-note">Our scheduling desk will call to confirm the appointment. Please have relevant correspondence available — nothing is filed, and nothing is shared.</p>
+          <button class="btn btn-ghost" type="button" id="successClose">Done</button>
         </div>
-
-        <div class="modal__ornament" aria-hidden="true">
-          <span class="ornament">✦</span>
-        </div>
-      </aside>
-
-      <form class="modal__form" id="bookingForm" novalidate>
-        <div class="form__grid">
-          <label class="field">
-            <span class="field__label">Service <em>*</em></span>
-            <select name="service" required>
-              <option value="">Select a ritual…</option>
-              <optgroup label="Hair Styling">
-                <option>Couture Cut & Style</option>
-                <option>Balayage Lumière</option>
-                <option>Keratin Renewal Therapy</option>
-                <option>Bridal Hair Sculpting</option>
-                <option>Gloss Treatment & Blowout</option>
-              </optgroup>
-              <optgroup label="Skincare & Facials">
-                <option>Caviar Lifting Facial</option>
-                <option>24K Gold Infusion Ritual</option>
-                <option>Deep HydraGlass Facial</option>
-                <option>Microcurrent Sculpting</option>
-                <option>Bespoke Diamond Peel</option>
-              </optgroup>
-              <optgroup label="Nail Art">
-                <option>Couture Manicure</option>
-                <option>Japanese Gel Art</option>
-                <option>Crystal Encrusté Pedicure</option>
-                <option>Bridal Nail Suite</option>
-                <option>Soak-Off & Refresh</option>
-              </optgroup>
-              <optgroup label="Spa & Massages">
-                <option>Aromatherapy Silk Massage</option>
-                <option>Hot Stone Embrace</option>
-                <option>Lymphatic Drainage Ritual</option>
-                <option>Four-Hand Synchrony</option>
-                <option>Couple's Sanctuary Suite</option>
-              </optgroup>
-            </select>
-            <small class="field__error" data-error-for="service"></small>
-          </label>
-
-          <label class="field">
-            <span class="field__label">Preferred stylist</span>
-            <select name="stylist">
-              <option value="">Any available master</option>
-              <option>Isabelle Moreau</option>
-              <option>Sophia Lin</option>
-              <option>Marcus Bellini</option>
-              <option>Elena Vasquez</option>
-            </select>
-          </label>
-
-          <label class="field">
-            <span class="field__label">Date <em>*</em></span>
-            <input type="date" name="date" required>
-            <small class="field__error" data-error-for="date"></small>
-          </label>
-
-          <label class="field">
-            <span class="field__label">Preferred time <em>*</em></span>
-            <select name="time" required>
-              <option value="">Select…</option>
-              <option>9:00 AM</option>
-              <option>10:00 AM</option>
-              <option>11:00 AM</option>
-              <option>12:00 PM</option>
-              <option>1:00 PM</option>
-              <option>2:00 PM</option>
-              <option>3:00 PM</option>
-              <option>4:00 PM</option>
-              <option>5:00 PM</option>
-              <option>6:00 PM</option>
-              <option>7:00 PM</option>
-            </select>
-            <small class="field__error" data-error-for="time"></small>
-          </label>
-
-          <label class="field">
-            <span class="field__label">Full name <em>*</em></span>
-            <input type="text" name="name" required autocomplete="name">
-            <small class="field__error" data-error-for="name"></small>
-          </label>
-
-          <label class="field">
-            <span class="field__label">Phone <em>*</em></span>
-            <input type="tel" name="phone" required autocomplete="tel" placeholder="(310) 555-0192">
-            <small class="field__error" data-error-for="phone"></small>
-          </label>
-
-          <label class="field field--full">
-            <span class="field__label">Email <em>*</em></span>
-            <input type="email" name="email" required autocomplete="email" placeholder="you@domain.com">
-            <small class="field__error" data-error-for="email"></small>
-          </label>
-
-          <label class="field field--full">
-            <span class="field__label">Notes for our concierge <span class="field__optional">(optional)</span></span>
-            <textarea name="notes" rows="3" placeholder="Allergies, accessibility, occasion, anything we should know…"></textarea>
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn--primary btn--lg form__submit" id="formSubmit">
-          <span class="form__submit-label">Request reservation</span>
-          <span class="form__submit-spinner" aria-hidden="true"></span>
-        </button>
-
-        <div class="form__success" id="formSuccess" role="status" aria-live="polite">
-          <span class="form__success-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="32" height="32"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
-          </span>
-          <strong>Reservation received.</strong>
-          <p>Our concierge will reach you within two hours to confirm. For urgent requests, please call <a href="tel:+13105550192">+1 (310) 555-0192</a>.</p>
-          <button type="button" class="btn btn--ghost" data-close>Close</button>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
 
